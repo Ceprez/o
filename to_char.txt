@@ -1,0 +1,32 @@
+TO_CHAR(sysdate, 'yyyy/mm/dd')
+Result: '2003/07/09'
+
+TO_CHAR(sysdate, 'Month DD, YYYY')
+Result: 'July 09, 2003'
+
+TO_CHAR(sysdate, 'FMMonth DD, YYYY')
+Result: 'July 9, 2003'
+
+TO_CHAR(sysdate, 'MON DDth, YYYY')
+Result: 'JUL 09TH, 2003'
+
+TO_CHAR(sysdate, 'FMMON DDth, YYYY')
+Result: 'JUL 9TH, 2003'
+
+TO_CHAR(sysdate, 'FMMon ddth, YYYY')
+Result: 'Jul 9th, 2003'
+
+TO_CHAR(1210.73, '9999.9')
+Result: ' 1210.7'
+
+TO_CHAR(-1210.73, '9999.9')
+Result: '-1210.7'
+
+TO_CHAR(1210.73, '9,999.99')
+Result: ' 1,210.73'
+
+TO_CHAR(1210.73, '$9,999.00')
+Result: ' $1,210.73'
+
+TO_CHAR(21, '000099')
+Result: ' 000021'

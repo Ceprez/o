@@ -1,0 +1,14 @@
+declare
+  max_sal hr.employees.salary%type;
+  min_sal hr.employees.salary%type;
+  avg_sal number;
+  
+begin
+  select MAX(salary), MIN(salary), AVG(salary)
+  INTO max_sal, min_sal, avg_sal
+  from hr.employees;
+  
+  dbms_output.put_line('Maximum Salary: ' || max_sal);
+  dbms_output.put_line('Minimum Salary: ' || min_sal);
+  dbms_output.put_line('Average Salary: ' || avg_sal);
+ end;

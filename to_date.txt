@@ -1,0 +1,8 @@
+TO_DATE('2003/07/09', 'yyyy/mm/dd')
+Result: date value of July 9, 2003
+
+TO_DATE('070903', 'MMDDYY')
+Result: date value of July 9, 2003
+
+TO_DATE('20020315', 'yyyymmdd')
+Result: date value of Mar 15, 2002

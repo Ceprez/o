@@ -1,0 +1,11 @@
+select distinct manager_id, TRUNC(AVG(SALARY),2)
+FROM hr.employees
+group by manager_id;
+
+
+
+
+select DEPARTMENT_ID, COUNT(EMPLOYEE_ID)
+FROM hr.employees
+group by department_id
+having COUNT(EMPLOYEE_ID) > 10;

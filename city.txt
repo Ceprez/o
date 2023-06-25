@@ -1,0 +1,11 @@
+select 
+       hr.locations.city, 
+       hr.locations.country_id, 
+       count(distinct hr.departments.department_id) as dep_amt,
+       count(distinct hr.employees.first_name) as emp_amt
+from hr.locations
+left join hr.departments
+     on hr.locations.location_id = hr.departments.location_id
+left join hr.employees
+     on hr.departments.manager_id = hr.employees.manager_id
+group by hr.locations.city, hr.locations.country_id;

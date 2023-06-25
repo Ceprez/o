@@ -1,0 +1,9 @@
+declare
+  number1 NUMBER := 10;
+  number2 NUMBER := 20;
+  number3 NUMBER;
+ 
+begin
+  number3 := (number1 + number2)/2;
+  dbms_output.put_line('result: ' || number3);
+end;
